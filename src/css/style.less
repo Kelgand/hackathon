@@ -1,0 +1,123 @@
+body{
+    background-color: lightyellow;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.centerMargin(){
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h1{
+        font-size: 2em;
+    }
+
+    select{
+        flex-basis: auto;
+        box-sizing: border-box;
+        width: 275px;
+        height: 30px;
+        font-size: 1.3em;
+
+        padding: 2px 15px;
+        border-radius: 15px;
+    }
+}
+
+.dogPicturesContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 1s;
+
+    .dogPicture {
+        flex-basis: auto;
+        max-width: 30%;
+    }
+}
+
+.infoText{
+    width: 80%;
+    font-size: 1.2em;
+    .centerMargin();
+    
+    .img{
+        .centerMargin();
+        width: min-content;
+    }
+}
+
+.dogFinder{
+    p{
+        text-align: center;
+    }
+
+    .searchContainer{
+        .centerMargin();
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+
+        input{
+            width: 200px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button{
+            width: 200px;
+            height: 20px;
+        }
+    }
+}
+
+.dogPanelsContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .dogPanel{
+        flex-basis: auto;
+        width: 500px;
+        box-sizing: border-box;
+
+        border: 1px solid black;
+        border-radius: 5px;
+
+        margin: 5px 0px;
+        padding: 5px;
+
+        background-color: #adddffa6;
+
+        h3{
+            text-align: center;
+        }
+    }
+}
+
+.dogContentContainer{
+    display: flex;
+    justify-content: space-around;
+
+    img{
+        .centerMargin();
+    }
+
+    .dogInfo{
+        width: 180px;
+    }
+}
+
+.hideContainer{
+    max-height: 0px;
+}
